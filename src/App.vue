@@ -25,6 +25,9 @@
 
 
 
+  <router-link to="/about">À propos</router-link>
+
+  <router-view></router-view>
 
 </template>
 
