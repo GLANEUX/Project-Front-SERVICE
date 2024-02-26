@@ -2,12 +2,30 @@
   <div>
     <header-vue msg="Qui travaille aujourd'hui ?"/> 
   </div>
-  <div>
-    <check-box-vue />
-  </div>
-  <div>
+
+
+
+  <div class="overflow">
+    <check-box-vue name="Micheal olson"/>
+    <check-box-vue name="addams mercredi"/>
+    <check-box-vue name="lola opkins"/>
+    <check-box-vue name="Micheal olson"/>
+    <check-box-vue name="addams mercredi"/>
+    <check-box-vue name="lola opkins"/>
+    <check-box-vue name="Micheal olson"/>
+    <check-box-vue name="addams mercredi"/>
+    <check-box-vue name="lola opkins"/>
+ </div>
+
+
+
+  <div class="bottom">
     <button-vue msg="Suivant" :showImage="true"/>
   </div>
+
+
+
+
 </template>
 
 <script>

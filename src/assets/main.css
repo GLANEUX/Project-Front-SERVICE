@@ -9,3 +9,19 @@
 .inner-padding{
   padding: 0 20px;
 }
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  background-color: var(--white);
+  height: 10vh;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  width: -webkit-fill-available;
+}
+
+.overflow{
+  overflow-y: scroll;
+  height: 60vh;
+}

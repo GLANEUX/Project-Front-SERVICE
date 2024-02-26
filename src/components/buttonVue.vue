@@ -26,13 +26,7 @@ export default {
 <style scoped>
 @import '../assets/base.css';
 
-div{
-    background-color: var(--white);
-    height: 10vh;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-}
+
 
 button {
   width: 100%;
@@ -48,5 +42,7 @@ button {
   align-items: center;
   gap: 10px;
 }
-
+div{
+  width: -webkit-fill-available;
+}
 </style>

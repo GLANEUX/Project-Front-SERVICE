@@ -16,7 +16,7 @@
 
  
 body {
-  min-height: 100vh;
+  max-height: 100vh;
   color: var(--text-color);
   background: var(--background-color);
   transition:
@@ -29,4 +29,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 

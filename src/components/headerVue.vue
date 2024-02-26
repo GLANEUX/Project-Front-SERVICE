@@ -122,6 +122,7 @@ line-height: 23px;
     display: flex;
     flex-direction: column;
     /* backdrop-filter: blur(50px); */
+    z-index: 10;
 }
 
 .side-menu ul {
@@ -144,11 +145,13 @@ line-height: 23px;
     cursor: pointer;
 }
 
+
+
 .parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 5px;
+    gap: 5px;
 }
 
 span {
