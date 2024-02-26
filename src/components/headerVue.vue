@@ -5,23 +5,23 @@
             <h1>{{ msg }}</h1>
         </div>
         <div class="menu" @click="toggleMenu">
-            <img src="../assets/menu.svg" alt="menu" height="10px">
+            <img src="../assets/img/menu.svg" alt="menu" height="10px">
         </div>
         
 
     </div>
     <div v-if="isMenuOpen" class="side-menu">
-            <img class="close-button" src="../assets/cross.svg" alt="Close" @click="toggleMenu" height="20px">
+            <img class="close-button" src="../assets/img/cross.svg" alt="Close" @click="toggleMenu" height="20px">
 
 
 
             <div class="middle-nav align">
                 <div >
-                    <img src="../assets/cloche.svg" alt="cloche">
+                    <img src="../assets/img/cloche.svg" alt="cloche">
                     <p>Service</p>
                 </div>
                 <div>
-                    <img src="../assets/admin.svg" alt="admin">
+                    <img src="../assets/img/admin.svg" alt="admin">
                     <p>Administrateur</p>
                 </div>
             </div>
@@ -31,11 +31,11 @@
             <div class="bottom-nav align">
                 <div>
                     <p>Modifier le service</p>
-                    <img src="../assets/modif.svg" alt="modification">
+                    <img src="../assets/img/modif.svg" alt="modification">
                 </div>
                 <div>
                     <p class="red-text">Fermer le service</p>
-                    <img src="../assets/exit.svg" alt="exit">
+                    <img src="../assets/img/exit.svg" alt="exit">
                 </div>
             </div>
 
@@ -67,7 +67,7 @@ const props = defineProps({
 </script>
   
 <style scoped>
-@import '../assets/base.css';
+@import '../assets/style/base.css';
 
 .red-text{
     color: var(--red);
