@@ -1,0 +1,53 @@
+<template>
+  <div>
+    <button>{{ msg }}  
+      <img v-if="showImage" src="../assets/arrow-alt.svg" alt="arrow" height="15px">
+    </button>
+  </div>
+</template>
+
+<script>
+
+export default {
+  props: {
+    msg: {
+      type: String,
+      required: true
+    },
+    showImage: {
+      type: Boolean,
+      default: false // Par défaut, l'image n'est pas affichée
+    }
+  }
+}
+</script>
+
+
+<style scoped>
+@import '../assets/base.css';
+
+div{
+    background-color: var(--white);
+    height: 10vh;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    padding: 0 20px;
+}
+
+button {
+  width: 100%;
+  background-color: var(--orange-light);
+  border-radius: 25px;
+  border: none;
+  height: 5vh;
+  padding: 5px;
+  color: var(--orange);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+</style>
