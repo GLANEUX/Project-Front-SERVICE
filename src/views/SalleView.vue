@@ -36,7 +36,7 @@
   import navVue from '../components/navVue.vue'
   
   export default {
-    name: "app",
+    name: "salle",
     components: {
       ButtonVue,
       HeaderVue,
