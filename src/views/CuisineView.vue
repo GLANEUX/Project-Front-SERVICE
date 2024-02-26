@@ -19,9 +19,11 @@
 
 
 
-  <div class="bottom">
-    <button-vue msg="Suivant" :showImage="true"/>
-  </div>
+  
+ <div class="bottom">
+      
+      <button-vue msg="Suivant" :showImage="true" link="/service"/>
+    </div>
 
 
 

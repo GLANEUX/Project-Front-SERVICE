@@ -20,7 +20,8 @@
   
   
     <div class="bottom">
-      <button-vue msg="Suivant" :showImage="true"/>
+      
+      <button-vue msg="Suivant" :showImage="true" link="/cuisine"/>
     </div>
   
   

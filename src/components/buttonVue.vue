@@ -1,27 +1,31 @@
 <template>
   <div class="inner-padding">
-    <button>{{ msg }}  
-      <img v-if="showImage" src="../assets/img/arrow-alt.svg" alt="arrow" height="15px">
-    </button>
+    <router-link :to="link" class="button-wrapper" style="text-decoration: none;">
+      <button>{{ msg }}  
+        <img v-if="showImage" src="../assets/img/arrow-alt.svg" alt="arrow" height="15px">
+      </button>
+    </router-link>
   </div>
 </template>
 
 <script>
-
 export default {
   props: {
     msg: {
       type: String,
       required: true
     },
+    link: {
+      type: String,
+      required: true
+    },
     showImage: {
       type: Boolean,
-      default: false // Par défaut, l'image n'est pas affichée
+      default: false
     }
   }
 }
 </script>
-
 
 <style scoped>
 @import '../assets/style/base.css';
@@ -41,6 +45,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 div{
   width: -webkit-fill-available;

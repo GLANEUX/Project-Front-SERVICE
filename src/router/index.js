@@ -8,17 +8,21 @@ const router = createRouter({
       name: 'salle',
       component: () => import('../views/SalleView.vue')
     },
-    {
-        path: '/salle',
-        name: 'salle',
-        component: () => import('../views/SalleView.vue')
-      },
-    {
-      path: '/Cuisine',
-      name: 'cuisine',
-      component: () => import('../views/CuisineView.vue')
+        {
+      path: '/salle',
+      name: 'salle',
+      component: () => import('../views/SalleView.vue')
     },
     {
+      path: '/cuisine',
+      name: 'cuisine',
+      component: () => import('../views/CuisineView.vue')
+    },{
+        path: '/tips',
+        name: 'tips',
+        component: () => import('../views/TipsView.vue')
+      },
+      {
         path: '/service',
         name: 'service',
         component: () => import('../views/ServiceView.vue')
