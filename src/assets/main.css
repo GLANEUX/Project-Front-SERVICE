@@ -5,3 +5,7 @@
   margin: 0 auto;
   font-weight: normal;
 }
+
+.inner-padding{
+  padding: 0 20px;
+}

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="inner-padding">
     <button>{{ msg }}  
       <img v-if="showImage" src="../assets/arrow-alt.svg" alt="arrow" height="15px">
     </button>
@@ -32,7 +32,6 @@ div{
     display:flex;
     align-items: center;
     justify-content:center;
-    padding: 0 20px;
 }
 
 button {
