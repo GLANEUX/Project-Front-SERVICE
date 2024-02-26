@@ -1,7 +1,7 @@
 <template>
   <div class="inner-padding">
     <button>{{ msg }}  
-      <img v-if="showImage" src="../assets/arrow-alt.svg" alt="arrow" height="15px">
+      <img v-if="showImage" src="../assets/img/arrow-alt.svg" alt="arrow" height="15px">
     </button>
   </div>
 </template>
@@ -24,7 +24,7 @@ export default {
 
 
 <style scoped>
-@import '../assets/base.css';
+@import '../assets/style/base.css';
 
 
 

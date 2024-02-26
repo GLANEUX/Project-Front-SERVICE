@@ -1,7 +1,7 @@
 <template>
     <div :class="{ 'boxed-checked': checked, 'boxed': !checked }">
       <div>
-        <img src="../assets/user.svg" alt="user">
+        <img src="../assets/img/user.svg" alt="user">
         <label for="checkbox">{{ name }}</label>
       </div>
       <input type="checkbox" id="checkbox" v-model="checked" :class="{ 'checkbox-checked': checked, 'checkbox': !checked }"/>
@@ -22,7 +22,7 @@
   </script>
   
   <style scoped>
-  @import '../assets/base.css';
+  @import '../assets/style/base.css';
   
   .boxed {
     border-radius: 7px;
@@ -66,6 +66,7 @@ gap: 15px;
   .checkbox-checked {
     transform: scale(1.5);
     background-color: var(--orange);
+    accent-color: #ff5e2e;
   }
   </style>
   

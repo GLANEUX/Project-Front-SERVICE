@@ -5,4 +5,8 @@
       <p>This is the about page content.</p>
     </div>
   </template>
-  
+  <script>
+  export default {
+    name: "about"
+  }
+  </script>
