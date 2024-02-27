@@ -1,7 +1,7 @@
 <template>
   <div class="inner-padding">
     <router-link :to="link" class="button-wrapper" style="text-decoration: none;">
-      <button>{{ msg }}  
+      <button>{{ msg }}
         <img v-if="showImage" src="../assets/img/arrow-alt.svg" alt="arrow" height="15px">
       </button>
     </router-link>
@@ -47,7 +47,8 @@ button {
   gap: 10px;
   cursor: pointer;
 }
-div{
+
+div {
   width: -webkit-fill-available;
 }
 </style>

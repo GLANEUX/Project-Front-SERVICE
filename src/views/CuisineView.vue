@@ -1,38 +1,33 @@
 <template>
   <div>
-    <header-vue msg="Qui travaille aujourd'hui ?"/> 
+    <header-vue msg="Qui travaille aujourd'hui ?" />
   </div>
 
-<nav-vue/>
+  <nav-vue />
 
   <div class="overflow">
-    <check-box-vue name="qsdf olson"/>
-    <check-box-vue name="qdsf mercredi"/>
-    <check-box-vue name="lola qdsf"/>
-    <check-box-vue name="qdf olson"/>
-    <check-box-vue name="addams mercredi"/>
-    <check-box-vue name="lola qdf"/>
-    <check-box-vue name="qdsf olson"/>
-    <check-box-vue name="addams mercredi"/>
-    <check-box-vue name="lola opkins"/>
- </div>
-
-
-
-  
- <div class="bottom">
-      
-      <button-vue msg="Suivant" :showImage="true" link="/service"/>
-    </div>
+    <check-box-vue name="robert tessier" />
+    <check-box-vue name="lilou pams" />
+    <check-box-vue name="kevin morin" />
+    <check-box-vue name="bertran sort" />
+    <check-box-vue name="atenis ciel" />
+    <check-box-vue name="sarah croche" />
+    <check-box-vue name="soron cru" />
+    <check-box-vue name="eric cartman" />
+    <check-box-vue name="diane peanut" />
+  </div>
 
 
 
 
+  <div class="bottom">
 
+    <button-vue msg="Suivant" :showImage="true" link="/service" />
+  </div>
 </template>
 
 <script>
-import ButtonVue from '../components/buttonVue.vue'; 
+import ButtonVue from '../components/buttonVue.vue';
 import HeaderVue from '../components/headerVue.vue';
 import checkBoxVue from '../components/checkBoxVue.vue';
 import navVue from '../components/navVue.vue'

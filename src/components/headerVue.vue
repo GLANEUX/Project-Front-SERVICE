@@ -7,41 +7,48 @@
         <div class="menu" @click="toggleMenu">
             <img src="../assets/img/menu.svg" alt="menu" height="10px">
         </div>
-        
+
 
     </div>
     <div v-if="isMenuOpen" class="side-menu">
-            <img class="close-button" src="../assets/img/cross.svg" alt="Close" @click="toggleMenu" height="20px">
+        <img class="close-button" src="../assets/img/cross.svg" alt="Close" @click="toggleMenu" height="20px">
 
 
 
-            <div class="middle-nav align">
-                <div >
-                    <img src="../assets/img/cloche.svg" alt="cloche">
-                    <p>Service</p>
-                </div>
-                <div>
-                    <img src="../assets/img/admin.svg" alt="admin">
-                    <p>Administrateur</p>
-                </div>
+        <div class="middle-nav align">
+            <div>
+
+                <img src="../assets/img/cloche.svg" alt="cloche">
+                <p>
+                    <RouterLink to="/salle" class="link" style="text-decoration: none;"
+                        :class="{ 'active-link': isActive('/salle') }">
+                        Service</RouterLink>
+                </p>
             </div>
-
-
-
-            <div class="bottom-nav align">
-                <div>
-                    <p>Modifier le service</p>
-                    <img src="../assets/img/modif.svg" alt="modification">
-                </div>
-                <div>
-                    <p class="red-text">Fermer le service</p>
-                    <img src="../assets/img/exit.svg" alt="exit">
-                </div>
+            <div>
+                <img src="../assets/img/admin.svg" alt="admin">
+                <p>
+                    <RouterLink to="/salle" class="link" style="text-decoration: none;">Administrateur</RouterLink>
+                </p>
             </div>
-
-
-
         </div>
+
+
+
+        <div class="bottom-nav align">
+            <div>
+                <p>Modifier le service</p>
+                <img src="../assets/img/modif.svg" alt="modification">
+            </div>
+            <div>
+                <p class="red-text">Fermer le service</p>
+                <img src="../assets/img/exit.svg" alt="exit">
+            </div>
+        </div>
+
+
+
+    </div>
 </template>
   
 <script setup>
@@ -64,20 +71,51 @@ const props = defineProps({
         required: true
     }
 });
+
+
 </script>
-  
+<script>
+import { useRouter } from 'vue-router';
+
+export default {
+    methods: {
+        isActive(route) {
+            return this.$route.path === router;
+        }
+    }
+};
+</script>
+
 <style scoped>
 @import '../assets/style/base.css';
 
-.red-text{
+
+
+.link {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 19.55px;
+    color: #00000066;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.active-link {
+    color: var(--orange) !important;
+}
+
+
+
+.red-text {
     color: var(--red);
 }
-.align.bottom-nav div{
+
+.align.bottom-nav div {
     gap: 10px;
 
 }
 
-.align div{
+.align div {
     display: inline-flex;
     gap: 30px;
     justify-content: start;
@@ -85,16 +123,19 @@ const props = defineProps({
     width: 100%;
     align-items: center;
 }
-.align div:last-child{
+
+.align div:last-child {
     border: none;
 }
-.middle-nav div p{
-font-size: 20px;
-font-weight: 700;
-line-height: 23px;
+
+.middle-nav div p .link {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
 }
 
-.middle-nav{
+.middle-nav {
     margin-top: 60px;
     margin-left: 40px;
 }
@@ -103,7 +144,8 @@ line-height: 23px;
     justify-content: center;
 
 }
-.bottom-nav{
+
+.bottom-nav {
     position: fixed;
     bottom: 0;
 }
@@ -135,7 +177,7 @@ line-height: 23px;
 }
 
 .close-button {
- align-self: end;
+    align-self: end;
     cursor: pointer;
 }
 
